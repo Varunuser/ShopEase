@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Products - ShopEase
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <nav class="navbar">
+
+        <a
+            href="index.html"
+            class="logo">
+
+            ShopEase
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="cart.html">
+
+                Cart
+
+                <span id="cart-count">
+                    0
+                </span>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<section class="products-section">
+
+    <div class="section-heading">
+
+        <p>
+            SHOP
+        </p>
+
+        <h1>
+            Our Products
+        </h1>
+
+    </div>
+
+
+    <div class="search-area">
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search products..."
+            onkeyup="filterProducts()">
+
+
+        <select
+            id="category-filter"
+            onchange="filterProducts()">
+
+            <option value="All">
+                All Categories
+            </option>
+
+            <option value="Electronics">
+                Electronics
+            </option>
+
+            <option value="Fashion">
+                Fashion
+            </option>
+
+            <option value="Accessories">
+                Accessories
+            </option>
+
+        </select>
+
+
+        <select
+            id="sort-products"
+            onchange="sortProducts()">
+
+            <option value="default">
+                Sort By
+            </option>
+
+            <option value="low">
+                Price: Low to High
+            </option>
+
+            <option value="high">
+                Price: High to Low
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div
+        id="product-container"
+        class="product-container">
+    </div>
+
+
+    <p
+        id="no-products"
+        class="no-products">
+
+        No products found.
+
+    </p>
+
+</section>
+
+
+<footer>
+
+    <div class="copyright">
+
+        © 2026 ShopEase.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+<script>
+
+displayProducts();
+
+</script>
+
+</body>
+</html>

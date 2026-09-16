@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Invoice - ShopEase
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <nav class="navbar">
+
+        <a
+            href="index.html"
+            class="logo">
+
+            ShopEase
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="cart.html">
+
+                Cart
+
+                <span id="cart-count">
+                    0
+                </span>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<section class="invoice-section">
+
+    <div
+        id="invoice"
+        class="invoice">
+
+    </div>
+
+
+    <div class="invoice-actions">
+
+        <button
+            type="button"
+            class="button"
+            onclick="window.print()">
+
+            Print / Save Invoice
+
+        </button>
+
+
+        <a
+            href="products.html"
+            class="button secondary-button">
+
+            Continue Shopping
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="copyright">
+
+        © 2026 ShopEase.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+<script>
+
+generateInvoice();
+
+</script>
+
+</body>
+</html>

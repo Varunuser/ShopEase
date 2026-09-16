@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase - Online Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            ShopEase
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">
+                Cart
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            WELCOME TO SHOPEASE
+        </p>
+
+        <h1>
+            Shop Smart.<br>
+            Shop Easy.
+        </h1>
+
+        <p>
+            Discover electronics, fashion and accessories
+            at affordable prices.
+        </p>
+
+        <button
+            type="button"
+            class="button"
+            onclick="goToProducts()">
+
+            Explore Products
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="features">
+
+    <div class="feature">
+        <div class="feature-icon">🚚</div>
+
+        <h3>Fast Delivery</h3>
+
+        <p>
+            Quick and reliable delivery.
+        </p>
+    </div>
+
+
+    <div class="feature">
+        <div class="feature-icon">🔒</div>
+
+        <h3>Secure Shopping</h3>
+
+        <p>
+            Your shopping experience is safe.
+        </p>
+    </div>
+
+
+    <div class="feature">
+        <div class="feature-icon">💰</div>
+
+        <h3>Great Prices</h3>
+
+        <p>
+            Quality products at affordable prices.
+        </p>
+    </div>
+
+
+    <div class="feature">
+        <div class="feature-icon">⭐</div>
+
+        <h3>Quality Products</h3>
+
+        <p>
+            Carefully selected products.
+        </p>
+    </div>
+
+</section>
+
+
+<section class="categories">
+
+    <div class="section-heading">
+
+        <p>EXPLORE</p>
+
+        <h2>
+            Shop by Category
+        </h2>
+
+    </div>
+
+
+    <div class="category-container">
+
+        <a
+            href="products.html?category=Electronics"
+            class="category-card">
+
+            <div class="category-icon">
+                💻
+            </div>
+
+            <h3>Electronics</h3>
+
+            <p>
+                Gadgets and smart devices
+            </p>
+
+        </a>
+
+
+        <a
+            href="products.html?category=Fashion"
+            class="category-card">
+
+            <div class="category-icon">
+                👕
+            </div>
+
+            <h3>Fashion</h3>
+
+            <p>
+                Clothing and footwear
+            </p>
+
+        </a>
+
+
+        <a
+            href="products.html?category=Accessories"
+            class="category-card">
+
+            <div class="category-icon">
+                🎒
+            </div>
+
+            <h3>Accessories</h3>
+
+            <p>
+                Everyday essentials
+            </p>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <h2>
+        Find Something You Love
+    </h2>
+
+    <p>
+        Browse our collection and discover
+        your next favourite product.
+    </p>
+
+    <button
+        type="button"
+        class="button light-button"
+        onclick="goToProducts()">
+
+        Start Shopping
+
+    </button>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+            <h3>ShopEase</h3>
+
+            <p>
+                Your simple online shopping destination.
+            </p>
+        </div>
+
+
+        <div>
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p>
+                support@shopease.com
+            </p>
+
+            <p>
+                +91 98765 43210
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 ShopEase.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+<script>
+
+function goToProducts() {
+
+    window.location.href = "products.html";
+
+}
+
+</script>
+
+</body>
+</html>
