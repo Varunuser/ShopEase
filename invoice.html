@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-STXT0ZD5DV"></script>
+
+    <script>
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-STXT0ZD5DV');
+
+    </script>
+
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Invoice - ShopEase
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+
+<section class="invoice-section">
+
+    <div
+        id="invoice"
+        class="invoice">
+
+    </div>
+
+
+    <div class="invoice-actions">
+
+        <button
+            type="button"
+            class="button"
+            onclick="window.print()">
+
+            Print / Save Invoice
+
+        </button>
+
+
+        <a
+            href="products.html"
+            class="button secondary-button">
+
+            Continue Shopping
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+<script>
+
+    generateInvoice();
+
+</script>
+
+
+</body>
+
+</html>
